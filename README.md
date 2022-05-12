@@ -20,10 +20,6 @@ nginx:
   file.managed:
     - source: salt://nginx-moduli/index.html
 
-/etc/nginx/sites-available/default:
-  file.managed:
-    - source: salt://nginx-moduli/santtu.lan.conf
-
 /var/www/santtu.com/html/index.html:
   file.managed:
     - source: salt://nginx-moduli/santtu.com/html/index.html
