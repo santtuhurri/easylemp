@@ -1,12 +1,12 @@
 # easylemp
-Course project
+[Palvelinten hallinta](https://terokarvinen.com/2021/configuration-management-systems-2022-spring/) -kurssin viimeinen projekti.
 
 - Tekijä: Santtu Hurri
 - Käyttöjärjestelmä: Debian 11 "bullseye"  
 - Versio: alpha
 - Lisenssi: GNU General Public License v2.0
 
-Tässä projektissa on tarkoitus rakentaa oma moduli, joka asentaa Linux-koneelle LEMP-stackin, tekee asennettuihin ohjelmiin tarvittavat konfiguroinnit sekä ottaa käyttöön kaksi Nginx server blockia eli virtual hostia. Pyrin myös siihen, että moduli asentaisi ainakin toiselle server blockille  käyttöön jonkun palvelun. Tarkoitus on, että käyttäjä saisi pienillä muutoksilla käyttöönsä valmiin paketin web-palvelimella työskentelyä varten.
+Tässä projektissa on tarkoitus rakentaa oma moduli, joka asentaa Linux-koneelle LEMP-stackin (Linux(L - käyttöjärjestelmä), Nginx(E - webpalvelin), MariaDB(M - tietokanta) & PHP(P - ohjelmointikieli)), tekee asennettuihin ohjelmiin tarvittavat konfiguroinnit sekä ottaa käyttöön kaksi Nginx server blockia (mahdollistaa usean sivuston samalla IP-osoitteella) eli virtual hostia. Pyrin myös siihen, että moduli asentaisi ainakin toiselle server blockille  käyttöön jonkun palvelun. Tarkoitus on, että käyttäjä saisi pienillä muutoksilla käyttöönsä valmiin paketin web-palvelimella työskentelyä varten.
 
 ![examplepicture](images/0.examplepicture.jpg)
 
