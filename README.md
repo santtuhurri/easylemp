@@ -2,6 +2,7 @@
 Course project
 
 - Tekijä: Santtu Hurri
+- Käyttöjärjestelmä: Debian 11 "bullseye"  
 - Versio: alpha
 - Lisenssi: GNU General Public License v2.0
 
