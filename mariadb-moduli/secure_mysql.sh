@@ -13,10 +13,14 @@ DELETE FROM mysql.db WHERE Db='test' OR Db='test\\_%';
 CREATE DATABASE shoplist CHARACTER SET utf8;
 # make a new user
 GRANT ALL ON shoplist.* TO shoplist@localhost IDENTIFIED BY 'USERshopl157forDEBIAN22';
-#switch to shoplist database
+# switch to shoplist database
 USE shoplist;
 # make a new table
 CREATE TABLE items(id INT AUTO_INCREMENT PRIMARY KEY, name VARCHAR(1024));
+# add items in to the table
+INSERT INTO items('name') VALUES ('carrot');
+INSERT INTO items('name') VALUES ('tomato');
+INSERT INTO items('name') VALUES ('kale');
 # make changes immediately
 FLUSH PRIVILEGES;
 EOS
