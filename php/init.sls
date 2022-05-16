@@ -1,4 +1,4 @@
-php-moduli:
+php:
   pkg.installed:
     - pkgs:
       - php-fpm
@@ -6,7 +6,7 @@ php-moduli:
 
 /var/www/santtu.com/shoplist.php:
   file.managed:
-    - source: salt://php-moduli/shoplist.php
+    - source: salt://php/shoplist.php
 
 php7.4-fpm:
   service.running:

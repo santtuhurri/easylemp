@@ -18,9 +18,9 @@ USE shoplist;
 # make a new table
 CREATE TABLE items(id INT AUTO_INCREMENT PRIMARY KEY, name VARCHAR(1024));
 # add items in to the table
-INSERT INTO items('name') VALUES ('carrot');
-INSERT INTO items('name') VALUES ('tomato');
-INSERT INTO items('name') VALUES ('kale');
+INSERT INTO items(name) VALUES ('carrot');
+INSERT INTO items(name) VALUES ('tomato');
+INSERT INTO items(name) VALUES ('kale');
 # make changes immediately
 FLUSH PRIVILEGES;
 EOS

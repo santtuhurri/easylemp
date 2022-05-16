@@ -3,16 +3,17 @@ nginx:
 
 /var/www/html/index.html:
   file.managed:
-    - source: salt://nginx-moduli/index.html    
-
+    - source: salt://nginx/html/index.html    
+    - makedirs: True
+    
 /var/www/santtu.com/html/index.html:
   file.managed:
-    - source: salt://nginx-moduli/santtu.com/html/index.html
+    - source: salt://nginx/santtu.com/html/index.html
     - makedirs: True
     
 /etc/nginx/sites-available/santtu.com.conf:
   file.managed:
-    - source: salt://nginx-moduli/santtu.com.conf
+    - source: salt://nginx/santtu.com.conf
 
 /etc/nginx/sites-enabled/santtu.com.conf:
   file.symlink:
@@ -20,12 +21,12 @@ nginx:
 
 /var/www/hurri.com/html/index.html:
   file.managed:
-    - source: salt://nginx-moduli/hurri.com/html/index.html
+    - source: salt://nginx/hurri.com/html/index.html
     - makedirs: True
 
 /etc/nginx/sites-available/hurri.com.conf:
   file.managed:
-    - source: salt://nginx-moduli/hurri.com.conf
+    - source: salt://nginx/hurri.com.conf
 
 /etc/nginx/sites-enabled/hurri.com.conf:
   file.symlink:
@@ -33,7 +34,7 @@ nginx:
 
 /etc/hosts:
   file.managed:
-    - source: salt://nginx-moduli/hosts
+    - source: salt://nginx/hosts
 
 nginx.service:
   service.running:

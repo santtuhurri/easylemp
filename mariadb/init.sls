@@ -7,5 +7,5 @@ mariadb.service:
 
 secure_mysql.sh:
   cmd.script:
-    - source: salt://mariadb-moduli/secure_mysql.sh
+    - source: salt://mariadb/secure_mysql.sh
     - unless: 'echo show databases|sudo mariadb -u root|grep shoplist'

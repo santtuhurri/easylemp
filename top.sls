@@ -1,5 +1,5 @@
 base:
   '*':
-    - nginx-moduli
-    - mariadb-moduli
-    - php-moduli
+    - nginx
+    - mariadb
+    - php
