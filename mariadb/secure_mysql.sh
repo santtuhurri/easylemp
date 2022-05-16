@@ -1,5 +1,6 @@
 #!/bin/bash
 
+
 mysql -sfu root <<EOS
 # delete anonymous users
 DELETE FROM mysql.user WHERE User='';
