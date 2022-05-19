@@ -1,4 +1,4 @@
-# easylemp
+# easylemp - THIS PROJECT WONT BE UPDATED AND HAS BEEN MOVED TO: https://github.com/santtuhurri/lemphelper
 [Palvelinten hallinta](https://terokarvinen.com/2021/configuration-management-systems-2022-spring/) -kurssin viimeinen projekti.
 
 - Tekijä: Santtu Hurri
